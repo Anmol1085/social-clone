@@ -28,8 +28,9 @@ export const SocketProvider = ({ children }) => {
 
     useEffect(() => {
         if (user) {
-            // Connect to same host
-            const newSocket = io('/', { path: '/socket.io' });
+            // Connect to check if env var is present, otherwise relative
+            const socketUrl = import.meta.env.VITE_API_URL || undefined;
+            const newSocket = io(socketUrl, { path: '/socket.io' });
             setSocket(newSocket);
 
             newSocket.on('connect', () => {
