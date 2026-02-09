@@ -8,6 +8,10 @@ A full-stack social media application built with the MERN stack (MongoDB, Expres
 - **Backend:** Node.js, Express.js, Socket.io, MongoDB (Mongoose), Cloudinary (for image uploads)
 - **Authentication:** JWT (JSON Web Tokens)
 
+## Live Demo
+
+**[Insert Deployed App Link Here]**
+
 ## Prerequisites
 
 - Node.js (v14 or higher)
@@ -53,7 +57,7 @@ CLOUDINARY_API_SECRET=your_api_secret
 NODE_ENV=development
 ```
 
-_(Note: If the client requires specific environment variables, add them to a `.env` file in the `client` directory, typically prefixed with `VITE_`)_
+_(Note: If the client requires specific environment variables, add them to a `.env` file in the `client` directory, typically prefixed with `VITE_`)\_
 
 ## Running the Application
 
